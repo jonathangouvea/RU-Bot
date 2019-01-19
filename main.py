@@ -65,7 +65,7 @@ async def on_message(message):
           almoco =  ':fork_and_knife: **ALMOÇO** :fork_and_knife:\n' + decorador(FindAlmoco(texto))
           await client.send_message(message.channel, almoco)
 
-          jantar = ':fork_and_knife: **JANTAR** :fork_and_knife:\n' + decorador(FindAlmoco(texto))
+          jantar = ':fork_and_knife: **JANTAR** :fork_and_knife:\n' + decorador(FindJantar(texto))
           await client.send_message(message.channel, jantar)
 
         elif message.content.lower() == '!almoco' or message.content.lower() == '!almoço':
